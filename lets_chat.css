@@ -1,0 +1,38 @@
+body
+{
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+#heading-img
+{
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+
+q {
+    font-style:italic;
+    font-family:cursive;
+    font-size: 50px;
+    color: grey;
+}
+
+#join_lets_chat {
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#login_button {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
