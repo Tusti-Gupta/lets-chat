@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Lets chat Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" type="text/css" href="lets_chat.css">
+<script src="lets_chat_room.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-warning navbar-dark fixed-top">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <img class="navbar-brand" src="heading.jpg" style="background-color: white; margin-right: 10px;">
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="username"> Username </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#create_room"> Create Room </a>
+      </li>
+      <button class="glyphicon glyphicon-log-out" onclick="logout();"> Logout</button>
+    </ul>
+  </nav>
+
+  <div id="create_room" style="margin-top: 70px; padding: 80px;">
+    
+    <h1 style="font-family: 'Yeon Sung'; font-size: 150px;"> 
+      <span style="color: darkorange;">W</span>
+      <span style="color: green;">e</span>
+      <span style="color: blue;">l</span>
+      <span style="color: yellow;">c</span>
+      <span style="color: red;">o</span>
+      <span style="color: pink;">m</span>
+      <span style="color: purple;">e</span>
+      <span style="color: brown;">!</span>
+    </h1>
+    
+    <br><br><br>
+    
+    <p style="font-size: 20px; font-family: cursive;"> Lets get started. Create your own room! </p>
+    
+    <br><br><br><br><br>
+    
+    <div class="input-group" style="justify-content: center;">
+      <input id="room_name" type="text" placeholder="Room Name" style="font-size: 20px;">
+      <div class="input-group-append">
+        <button class="btn btn-success" onclick="addRoom();" type="submit" style="font-size: 20px;">&nbsp;&nbsp;&nbsp;Go&nbsp;&nbsp;&nbsp;</button>
+      </div>
+    </div>
+    
+    <div id="output"></div>
+    
+  </div>
+</body>
+</html>
