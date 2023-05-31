@@ -26,10 +26,10 @@
         <img class="navbar-brand" src="heading.jpg" style="background-color: white; margin-right: 10px;">
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="username"> Username </a>
+        <a class="nav-link" href="#create_room"> Create Room </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#create_room"> Create Room </a>
+        <a class="nav-link" href="#room_names"> Rooms </a>
       </li>
       <button class="glyphicon glyphicon-log-out" onclick="logout();"> Logout</button>
     </ul>
@@ -45,8 +45,9 @@
       <span style="color: red;">o</span>
       <span style="color: pink;">m</span>
       <span style="color: purple;">e</span>
-      <span style="color: brown;">!</span>
     </h1>
+
+    <h1 id="user_name" style="font-size: 40px;"></h1>
     
     <br><br><br>
     
@@ -61,7 +62,10 @@
       </div>
     </div>
     
-    <div id="output"></div>
+    <div id="room_names">
+      <h1 style="font-size: 50px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: purple; background-color: orange;"> Existing rooms </h1>
+      <div id="output"></div>
+    </div>
     
   </div>
 </body>

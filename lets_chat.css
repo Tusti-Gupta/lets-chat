@@ -50,6 +50,20 @@ q {
     color: orange;
     border: none;
     font-size: 15px;
-    margin-left: 750px;
+    margin-left: 800px;
     border-radius: 10px;
+}
+
+#room_names {
+    margin-top: 160px;
+}
+
+.room_name {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+#output {
+    margin-top: 60px;
 }
