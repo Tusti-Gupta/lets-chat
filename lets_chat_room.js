@@ -26,11 +26,14 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
 });});}
 getData();
 
-user_name= localStorage.getItem("User_name");
-document.getElementById("user_name").innerHTML = user_name;
-
 function redirectToRoomName(name) {
   console.log(name);
   localStorage.setItem("room_name", name);
   window.location = "lets_chat_page.html";
+}
+
+function logout() {
+  localStorage.removeItem("User_name");
+  localStorage.removeItem("room_name")      
+  window.location = "index.html";
 }
